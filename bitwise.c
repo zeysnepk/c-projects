@@ -7,7 +7,7 @@
 | --> OR               #to result 1, if even one is 1
 ^ --> XOR              #to result 1, just one is 1
 << --> LEFT SHIFT      #shifts to the left and adding 0 at the beginning
->> --> RIGHT SHIFT     #shifts to the right and adding 0 at the beginning
+>> --> RIGHT SHIFT     #shifts to the right and adding 0 at the end
 */
 
 
