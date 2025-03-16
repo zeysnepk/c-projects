@@ -1,4 +1,7 @@
 #include<stdio.h>
+/*
+    Girilen binary numarasının decimal sayısını basar
+*/
 int main()
 {
     int binnum,decnum=0;
