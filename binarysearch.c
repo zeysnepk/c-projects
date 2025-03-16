@@ -2,6 +2,12 @@
 #include<math.h>
 #include<stdlib.h>
 
+/*
+    Girilen sayıları önce küçükten büyüğe sıralar,
+    sonra aranılan sayıyı binary search yöntemi ile 
+    bulup sırasını basar.
+*/
+
 
 void binarysearch(int*,int,int,int*);
 
