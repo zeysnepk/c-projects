@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    int n1,n2,i,ilk,son,j,count;
+    int n1,n2,i,ilk,son,j,count=0;
 
     printf("iki sayi giriniz:\n");
     scanf("%d%d",&n1,&n2);
@@ -19,28 +19,20 @@ int main()
     printf("%d ve %d arasindaki asal sayilar:\n",ilk,son);
     for(i=ilk;i<=son;i++)
     {
-        for(j=2;j<i;j++)
-        {
-            if(i%j == 0)
-            {
-                count++;
+        if(i<2){
+            count = 1;
+        }
+        else{
+            count=0;
+            for(j=2;j<=i-1;j++){
+                if(i%j == 0){
+                    count=1;
+                    break;
+                }
             }
         }
-        if(i==2)
-            {
-                count=0;
-            }
-    
-        if(count==0 && ilk>1)
-        {
-            
-            printf("%d\n",i);
+        if(count==0){
+            printf("%d\n", i);
         }
-
-        count=0;
     }
-
-    
-
-    
 }
