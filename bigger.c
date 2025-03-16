@@ -1,4 +1,7 @@
 #include<stdio.h>
+/*
+    Girilen 3 sayının en büyüğünü basar.
+*/
 int main()
 {
     int n1,n2,n3;
