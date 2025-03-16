@@ -2,6 +2,11 @@
 #include<math.h>
 #include<stdlib.h>
 
+/*
+    Kullanıcıdan A ve B dizisinin elemanları alır 
+    ve C dizisinde birleştirip basar.
+*/
+
 void birlestir(int A[], int B[], int C[], int N, int K)
 {
     int i;
