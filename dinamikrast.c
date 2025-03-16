@@ -51,21 +51,15 @@ void dizi_sirala(int *tamsayi, int *n)
 {
     int gecici,i;
 
-    while(*n>=0)
-    {
-        for(i=1;i<=*n-1;i++)
-        {
-            if(*(tamsayi+*n-i) < *(tamsayi+*n-i-1))
-            {
-                gecici=*(tamsayi+*n-i);
-                *(tamsayi+*n-i)=*(tamsayi+*n-i-1);
-                *(tamsayi+*n-i-1)=gecici;
-            }
+    for(i=0;i<*n-1;i++){
+        if( *(tamsayi + i) > *(tamsayi + i+1) ){
+            gecici=*(tamsayi+i);
+            *(tamsayi+i)=*(tamsayi+i+1);
+            *(tamsayi+i+1)=gecici;
         }
-
-        (*n)--;
-        dizi_sirala(tamsayi,n);
     }
+    (*n)--;
+    if(*n>=0) dizi_sirala(tamsayi,n);
 
 }
 
