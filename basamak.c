@@ -1,29 +1,21 @@
 #include<stdio.h>
-#include<math.h>
+
+/*
+    Girilen sayının basamak rakamlarını sondan
+    başlayarak alt alta sıralar.
+*/
 
 int main()
 {
-    int num,rennum,rnum,a;
+    int num, temp, basamak_sayisi, i=10;
 
     printf("Bir sayi giriniz: ");
     scanf("%d",&num);
-
-    rnum=num;
-    a=0;
-
-    while(rnum>0)
-    {
-        rnum=rnum/10;
-        a++;
+    temp=num;
+    while(temp>0){
+        temp /= 10;
+        basamak_sayisi = (num % i)/(i/10);
+        i *= 10;
+        printf("%d\n", basamak_sayisi);
     }
-
-    while(num>0)
-    {
-        rennum=num/pow(10,a-1);
-        num=num%100;
-        printf("%d\n",rennum);
-        a--;
-    }
-
-    
 }
